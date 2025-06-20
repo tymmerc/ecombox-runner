@@ -1,0 +1,90 @@
+{
+  "update_ecb.sh": {
+    "description": "Met à jour les composants de e-comBox automatiquement",
+    "options": [
+      {
+        "flag": "-s",
+        "label": "Services uniquement (sans mise à jour OS)",
+        "type": "checkbox"
+      },
+      {
+        "flag": "-a",
+        "label": "Mise à jour complète (OS + services)",
+        "type": "checkbox"
+      }
+    ]
+  },
+  "sauv_sites.sh": {
+    "description": "Crée une sauvegarde complète des services et des données",
+    "options": [
+      {
+        "flag": "-a",
+        "label": "Chemin complet vers l’archive .tar.gz",
+        "type": "text",
+        "placeholder": "/mnt/backup/ecombox_backup.tar.gz"
+      },
+      {
+        "flag": "-h",
+        "label": "Afficher l’aide",
+        "type": "checkbox"
+      }
+    ]
+  },
+  "restaure_sites.sh": {
+    "description": "Restaure une sauvegarde précédente de e-comBox",
+    "options": [
+      {
+        "flag": "-f",
+        "label": "Restaurer tous les sites (archive obligatoire)",
+        "type": "checkbox"
+      },
+      {
+        "flag": "-r",
+        "label": "Restaurer un seul site (nom du site)",
+        "type": "text",
+        "placeholder": "nom_du_site"
+      },
+      {
+        "flag": "-a",
+        "label": "Chemin complet vers l’archive .tar.gz",
+        "type": "text",
+        "placeholder": "/mnt/backup/ecombox_backup.tar.gz"
+      },
+      {
+        "flag": "-h",
+        "label": "Afficher l’aide",
+        "type": "checkbox"
+      }
+    ]
+  },
+  "nettoyage_volumes.sh": {
+    "description": "Nettoie les logs système pour libérer de l’espace",
+    "options": [
+      {
+        "flag": "-a",
+        "label": "Nettoyage complet (OS + services)",
+        "type": "checkbox"
+      },
+      {
+        "flag": "-s",
+        "label": "Nettoyer uniquement les logs des services",
+        "type": "checkbox"
+      }
+    ]
+  },
+  "reinitialise_application.sh": {
+    "description": "Réinitialise e-comBox à son état d’origine",
+    "options": [
+      {
+        "flag": "-h",
+        "label": "Réinitialisation complète (hard reset)",
+        "type": "checkbox"
+      },
+      {
+        "flag": "-n",
+        "label": "Conserver les certificats",
+        "type": "checkbox"
+      }
+    ]
+  }
+}
