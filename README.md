@@ -23,10 +23,6 @@ ecombox-runner/
 ├── ScriptForm.jsx
 └── index.css
 
-yaml
-Copier
-Modifier
-
 ---
 
 ## 🚀 Lancer le projet en local
